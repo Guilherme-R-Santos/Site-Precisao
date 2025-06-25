@@ -25,6 +25,7 @@ body {
   justify-content: flex-start;
   padding-top: 20px; 
   padding-left: 20px;
+  max-width: 100%;
 }
 
 #menu-superior {
@@ -36,4 +37,18 @@ body {
 
 #menu-superior li {
   margin: 0 15px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  #menu-superior {
+    font-size: 0.75rem;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  #menu-superior li {
+    margin: 0.3rem;
+  }
 }
