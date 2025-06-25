@@ -19,9 +19,11 @@ body {
   overflow-x: hidden;
 }
 
-/* Header e Banner Hero */
 #header {
-  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px; 
   padding-left: 20px;
 }
 
@@ -29,4 +31,9 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  margin-left: auto;
+}
+
+#menu-superior li {
+  margin: 0 15px;
 }
