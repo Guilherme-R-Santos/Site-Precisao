@@ -4,7 +4,7 @@
   background: var(--gradient-primary);
   max-height: 800px;
   min-width: 100%;
-  margin-top: 20px;
+  padding-top: 10px;
   display: grid;
   align-items: flex-start;
   position: relative;
@@ -83,11 +83,19 @@
 }
 
 /* Responsividade */
+
+@media (max-width: 768px) {
+  #hero {
+    margin-top: 70px;
+  }
+}
+
 @media (min-width: 768px) {
   #hero {
     flex-direction: row;
     align-items: flex-end;
     padding-bottom: 0;
+    margin-top: 70px;
   }
   
   #hero-text {

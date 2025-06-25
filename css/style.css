@@ -20,13 +20,26 @@ body {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  padding-top: 20px; 
-  padding-left: 20px;
-  max-width: 100%;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+/* #header { */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; Alinha logo e menu nas extremidades */
+  /* padding: 20px;  */
+  /* max-width: 100%; */
+/* } */
 
 #menu-superior {
   list-style: none;
@@ -39,16 +52,127 @@ body {
   margin: 0 15px;
 }
 
-/* Responsividade */
+#menu-superior button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
 
+.corpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f0f0f0; /* Cor de fundo suave */
+  padding-left: 20px;
+}
+
+#servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.titulo-servicos {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lista-servicos {
+  padding: 10px 5px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os itens */
+}
+
+.lista-servicos li {
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /*Largura fixa para os itens*/
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#btn-servicos {
+  background: var(--gradient-primary);
+  color: var(--color-text-banner);
+  margin-top: 20px;
+  padding: 10px 10px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#form input {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form button {
+  background: var(--gradient-primary);
+  color: var(--color-text-banner);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   #menu-superior {
     font-size: 0.75rem;
-    /* flex-direction: column; */
     align-items: center;
+    padding-left: 5px; /* Reduzindo o padding para telas menores */
   }
 
   #menu-superior li {
     margin: 0.3rem;
+  }
+
+  #logo-precisao {
+    width: 100px; /* Ajuste para telas menores */
+    height: auto;
+    padding-right: 5px;
+  }
+
+  #header {
+    padding: 10px 15px; /* Reduzindo o padding esquerdo para telas menores */
+    width: fit-content;
+  }
+
+  .corpo {
+    padding-left: 10px; /* Reduzindo o padding para telas menores */
   }
 }

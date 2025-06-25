@@ -16,14 +16,14 @@
 <body> <!-- Estrutura semântica, otimizada para SEO -->
     <header id="header">
         <a href="/index.html">
-            <img src="/img/logo-precisao-com-nome.svg" alt="Logo Precisão">
+            <img id="logo-precisao" src="/img/logo-precisao-com-nome.svg" alt="Logo Precisão">
         </a>
         <nav>
             <ul id="menu-superior">
-                <li>Início</li>
-                <li>Sobre Nós</li>
-                <li>Serviços</li>
-                <li>Contato</li>
+                <li id="menu-inicio"><button>início</button></li>
+                <li id="menu-sobre"><button>Sobre Nós</button></li>
+                <li id="menu-servicos"><button>Serviços</button></li>
+                <li id="menu-contato"><button>Contato</button></li>
             </ul>
         </nav>
     </header>
@@ -37,15 +37,59 @@
             <img src="/img/homem-segurando-uma-casa-pequena.svg" alt="Homem segurando uma casa pequena" id="hero-image">
         </div>
     </div>
-    <aside>
-
-    </aside>
     <main>
+        <article id="servicos" class="corpo">
+            <h1>Nossos Serviços</h1>
+            <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades imobiliárias, incluindo:</p>
+            <h3 class="titulo-servicos">Para o seu condomínio:</h3>
+            <ul id="lista-servicos-condominio" class="lista-servicos">
+                <li>Administração de condomínio</li>
+                <li>Soluções financeiras</li>
+                <li>Construtora e implantações</li>
+                <li>Indicações</li>
+            </ul>
+            <h3 class="titulo-servicos">Para você:</h3>
+            <ul id="lista-servicos-cliente" class="lista-servicos">
+                <li>Seguro de vida dos funcionários</li>
+                <li>Seguro Predial</li>
+                <li>Seguro incêndio e Cota condominial</li>
+                <li>Seguro Aluguel</li>
+                <li>Seguro Automóvel</li>
+                <li>Seguro PET</li>
+                <li>Seguro Smartphone</li>
+            </ul>
+            <br>
+            <p>Nossa equipe é composta por profissionais experientes e dedicados, prontos para oferecer soluções personalizadas que atendam às suas expectativas.</p>
+            <button id="btn-servicos">Saiba Mais</button>
 
+        </article>
+        <article id="sobre-nos" class="corpo">
+            <h1>Sobre nós</h1>
+            <p>A Precisão Empreendimentos Imobiliários atua há mais de 38 anos nos segmentos de administração de condomínios, locação e venda de imóveis, consolidando-se como uma referência no mercado imobiliário. Ao longo de nossa trajetória, desenvolvemos uma reputação sólida baseada em confiança, inovação e excelência no atendimento, buscando sempre oferecer soluções que vão além do esperado para nossos clientes.</p>
+        </article>
+        <article id="contato" class="corpo">
+            <h1>Entre em contato conosco!</h1>
+            <p>Estamos aqui para ajudar você com todas as suas necessidades de administração de imóveis e condomínios. Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+            <form id="form" action="/submit-form" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+        </article>
     </main>
     <footer>
         <p>Precisão © Todos os Direitos Reservados. CNPJ: 01.024.225/0001-40</p>
     </footer>
     
 </body>
+<script src="/js/index.js"></script>
 </html>
