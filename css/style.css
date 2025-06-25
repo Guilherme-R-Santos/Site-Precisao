@@ -1,0 +1,32 @@
+/* Reset básico e definições globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #d420c5;
+  --color-primary-light: #f30505;
+  --color-text-banner: white;
+  --gradient-primary: linear-gradient(100deg, #d420c5 0%, #f30505);
+  --gradient-accent: linear-gradient(to right, #f30505, #d420c5);
+}
+
+body {
+  font-family: 'Co Headline', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header e Banner Hero */
+#header {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+#menu-superior {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
