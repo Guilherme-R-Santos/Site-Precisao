@@ -83,6 +83,7 @@ function enviaFormulario() {
     alert(`Obrigado, ${nome}! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.`);
 }
 
+// Função para redirecionar para a página do simulador
 function irParaSimulador() {
     const pagAtual = window.location.pathname;
     if (pagAtual === '/simulador.html') {
@@ -95,6 +96,7 @@ function irParaSimulador() {
     }
 }
 
+// Primeiro botão do simulador
 const btnSimulador = document.getElementsByClassName('btn-simulador');
 if (btnSimulador.length > 0) {
     btnSimulador[0].addEventListener('click', function() {
@@ -102,6 +104,7 @@ if (btnSimulador.length > 0) {
     });
 }
 
+// Segundo botão do simulador
 const btnSimuladorFormulario = document.getElementById('btn-simulador-formulario');
 if (btnSimuladorFormulario) {
     btnSimuladorFormulario.addEventListener('click', function() {
