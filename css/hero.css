@@ -26,7 +26,7 @@
   font-size: clamp(2.5rem, 6vw, 3.5rem);
   -webkit-background-clip: text;
   background-clip: text;
-  color:black;
+  color:#242425;
   margin-bottom: 10px;
 }
 
@@ -60,9 +60,7 @@
 }
 
 /* Imagem do Hero */
-
-/* Imagem do Hero */
-#hero-image {
+.hero-img {
   width: auto;
   min-width: auto;
   min-height: auto;
@@ -74,19 +72,30 @@
 
 #hero-image-container {
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   flex: 1;
   height: 100%; 
   margin-top: 0; 
   margin-bottom: 0%;
   overflow: hidden;
+
+}
+
+#hero-logo {
+  margin-top: 5rem;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  animation: 5s float infinite;
 }
 
 /* Responsividade */
 
 @media (max-width: 768px) {
   #hero {
-    margin-top: 70px;
+    margin-top: 55px;
   }
 }
 
@@ -109,17 +118,30 @@
     min-width: 300px;
   }
   
-  #hero-image {
+  .hero-img {
     max-height: 70vh;
     max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
-  #hero-image {
+  .hero-img {
     min-width: auto;
     min-height: auto;
     max-width: 900px;
     max-height: 65vh;
+  }
+}
+
+/* Keyframes para a float animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

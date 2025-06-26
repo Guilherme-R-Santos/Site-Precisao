@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Grupo Precisão - Administração de imóveis e condomínios no Rio de Janeiro.">
-    <meta name="keywords" content="Grupo Precisão, administração de imóveis, administração de condomínios, Rio de Janeiro, gestão imobiliária">
+    <meta name="keywords"
+        content="Grupo Precisão, administração de imóveis, administração de condomínios, Rio de Janeiro, gestão imobiliária">
     <meta name="author" content="Guilherme Santos">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"/> <!-- Reset de CSS padrão entre navegodores via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Reset de CSS padrão entre navegodores via CDN -->
     <link href="https://fonts.cdnfonts.com/css/co-headline" rel="stylesheet">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/hero.css">
     <title>Grupo Precisão</title>
 </head>
+
 <body> <!-- Estrutura semântica, otimizada para SEO -->
     <header id="header">
         <a href="/index.html">
@@ -20,56 +25,144 @@
         </a>
         <nav>
             <ul id="menu-superior">
-                <li id="menu-inicio"><button>início</button></li>
-                <li id="menu-sobre"><button>Sobre Nós</button></li>
-                <li id="menu-servicos"><button>Serviços</button></li>
-                <li id="menu-contato"><button>Contato</button></li>
+                <li id="menu-inicio" class="menu-opt"><button>início</button></li>
+                <li id="menu-services" class="menu-opt"><button>Serviços</button></li>
+                <li id="menu-benefits" class="menu-opt"><button>Benefícios</button></li>
+                <li id="menu-sobre" class="menu-opt"><button>Sobre Nós</button></li>
+                <li id="menu-contato" class="menu-opt"><button>Contato</button></li>
             </ul>
         </nav>
     </header>
     <div id="hero">
         <h1 class="banner" id="precisao-hero">PRECISÃO,</h1>
         <h1 class="banner">INOVANDO SEU ESPAÇO TRANSFORMANDO O SEU MUNDO</h1>
-        <p>Há quase quatro décadas, atuamos com comprometimento e excelência na transformação da administração do seu condomínio e de sua locação</p>
+        <p>Há quase quatro décadas, atuamos com comprometimento e excelência na transformação da administração do seu
+            condomínio e de sua locação</p>
         <p>Conheça nossos serviços e descubra como podemos ajudar você a alcançar seus objetivos.</p>
         <button id="btn-hero">Saiba Mais</button>
         <div id="hero-image-container">
-            <img src="/img/homem-segurando-uma-casa-pequena.svg" alt="Homem segurando uma casa pequena" id="hero-image">
+            <img src="/img/logo-precisao-1.svg" alt="Logo Precisão" id="hero-logo" class="hero-img">
+            <img src="/img/homem-segurando-uma-casa-pequena.svg" alt="Homem segurando uma casa pequena" id="hero-image"
+                class="hero-img">
         </div>
     </div>
     <main>
-        <article id="servicos" class="corpo">
-            <h1>Nossos Serviços</h1>
+        <section id="services" class="corpo">
+            <h1 class="titulo-corpo">Nossos Serviços</h1>
             <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades imobiliárias, incluindo:</p>
-            <h3 class="titulo-servicos">Para o seu condomínio:</h3>
-            <ul id="lista-servicos-condominio" class="lista-servicos">
-                <li>Administração de condomínio</li>
-                <li>Soluções financeiras</li>
-                <li>Construtora e implantações</li>
-                <li>Indicações</li>
-            </ul>
-            <h3 class="titulo-servicos">Para você:</h3>
-            <ul id="lista-servicos-cliente" class="lista-servicos">
-                <li>Seguro de vida dos funcionários</li>
-                <li>Seguro Predial</li>
-                <li>Seguro incêndio e Cota condominial</li>
-                <li>Seguro Aluguel</li>
-                <li>Seguro Automóvel</li>
-                <li>Seguro PET</li>
-                <li>Seguro Smartphone</li>
-            </ul>
+            <div class="services-container">
+                <div class="services-list">
+                    <h3 class="titulo-services">Para o seu condomínio:</h3>
+                    <ul id="lista-services-condominio" class="lista-services">
+                        <li>Administração de condomínio</li>
+                        <li>Soluções financeiras</li>
+                        <li>Construtora e implantações</li>
+                        <li>Indicações</li>
+                    </ul>
+                </div>
+                <div class="services-list">
+                    <h3 class="titulo-services">Para você:</h3>
+                    <ul id="lista-services-cliente" class="lista-services">
+                        <li>Seguro de vida dos funcionários</li>
+                        <li>Seguro Predial</li>
+                        <li>Seguro incêndio e Cota condominial</li>
+                        <li>Seguro Aluguel</li>
+                        <li>Seguro Automóvel</li>
+                        <li>Seguro PET</li>
+                        <li>Seguro Smartphone</li>
+                    </ul>
+                </div>
+            </div>
             <br>
-            <p>Nossa equipe é composta por profissionais experientes e dedicados, prontos para oferecer soluções personalizadas que atendam às suas expectativas.</p>
-            <button id="btn-servicos">Saiba Mais</button>
+            <p>Nossa equipe é composta por profissionais experientes e dedicados, prontos para oferecer soluções
+                personalizadas que atendam às suas expectativas.</p>
+        </section>
+        <section id="benefits" class="corpo">
+            <h1 class="titulo-corpo">Benefícios</h1>
+            <p>
+                Ao escolher o Grupo Precisão, você se beneficia de uma gestão eficiente e transparente, com foco na
+                satisfação do cliente. Nossos principais benefícios incluem:
+            </p>
+            <div class="benefits-container">
+                <div class="benefit-item" id="benefit-1">
+                    <h3>Certificação Procondo</h3>
+                    <p>A Precisão é certificada com o selo Procondo, um dos mais importantes do setor. Concedido pela Abadi (Associação Brasileira das Administradoras de Imóveis), o selo é, portanto, uma garantia da excelência do serviço prestado pelas empresas atestadas e certificadas.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Precisão pay</h3>
+                    <p>O Precisão Pay é uma solução financeira inovadora, que permite o parcelamento de boletos de condomínio e locação no cartão de crédito, inclusive os atrasados.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Parceria WIND</h3>
+                    <p>Nosso Banco parceiro, 100% digital que nasceu para impulsionar o futuro do seu condomínio com soluções financeiras inovadoras e crédito consciente. </p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Simulador de Taxas de administração</h3>
+                    <p>Contamos com uma solução de simulação de taxas de administração, projetada para descomplicar e facilitar sua administração.</p>
+                    <button class="btn-simulador">Simular Taxa</button>
+                </div>
 
-        </article>
-        <article id="sobre-nos" class="corpo">
-            <h1>Sobre nós</h1>
-            <p>A Precisão Empreendimentos Imobiliários atua há mais de 38 anos nos segmentos de administração de condomínios, locação e venda de imóveis, consolidando-se como uma referência no mercado imobiliário. Ao longo de nossa trajetória, desenvolvemos uma reputação sólida baseada em confiança, inovação e excelência no atendimento, buscando sempre oferecer soluções que vão além do esperado para nossos clientes.</p>
-        </article>
-        <article id="contato" class="corpo">
-            <h1>Entre em contato conosco!</h1>
-            <p>Estamos aqui para ajudar você com todas as suas necessidades de administração de imóveis e condomínios. Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
+            </div>
+
+        </section>
+
+        <section id="sobre-nos" class="corpo">
+            <h1 class="titulo-corpo">Sobre nós</h1>
+            <p>A Precisão Empreendimentos Imobiliários atua há mais de 38 anos nos segmentos de administração de
+                condomínios, locação e venda de imóveis, consolidando-se como uma referência no mercado imobiliário. Ao
+                longo de nossa trajetória, desenvolvemos uma reputação sólida baseada em confiança, inovação e
+                excelência no atendimento, buscando sempre oferecer soluções que vão além do esperado para nossos
+                clientes.</p>
+            <br>
+            <p>Nossa equipe é composta por profissionais altamente qualificados, com expertise técnica e uma abordagem
+                humanizada. Combinamos conhecimento especializado em gestão imobiliária com uma compreensão profunda dos
+                aspectos humanos que envolvem a administração de condomínios, locação e vendas. Assim, somos capazes de
+                garantir um atendimento personalizado e eficaz, adaptado às necessidades específicas de cada cliente,
+                seja ele um síndico, um morador, ou um investidor. Adotamos uma postura empresarial transparente, com o
+                objetivo de promover uma relação de confiança mútua entre nossos colaboradores, parceiros e clientes.
+                Acreditamos que a eficiência na administração vai além dos números, trata-se de criar ambientes mais
+                seguros, funcionais e harmoniosos, onde todos os envolvidos possam prosperar. Com a Precisão
+                Empreendimentos Imobiliários, você pode confiar em uma administração robusta, ágil e preparada para
+                atender às necessidades complexas do mercado imobiliário moderno.</p>
+            <div id="missao-visao-valores">
+                <div id="missao" class="col-mvv">
+                    <h2>Missão</h2>
+                    <p>
+                        Nossa missão é transformar a maneira como a administração de condomínios é percebida e
+                        conduzida. Para isso, buscamos oferecer soluções inovadoras que melhorem a qualidade de vida
+                        urbana e contribuam para um impacto socioambiental positivo. Nos empenhamos na entrega de
+                        resultados que simplifiquem os processos do dia a dia, ao mesmo tempo em que promovem
+                        sustentabilidade e bem-estar para as comunidades que atendemos.
+                    </p>
+                </div>
+                <div id="visao" class="col-mvv">
+                    <h2>Visão</h2>
+                    <p>
+                        Nossa meta é nos tornarmos uma referência no mercado de soluções habitacionais, impulsionados
+                        pela inovação e pelo uso das mais modernas tecnologias. Nos dedicamos continuamente a melhorar a
+                        qualidade de vida dos nossos clientes, estabelecendo novos padrões de moradia urbana. Ao unir
+                        tradição e inovação, visamos antecipar as tendências do mercado e oferecer serviços que atendam
+                        às necessidades futuras de nossos clientes.
+                    </p>
+                </div>
+                <div id="valores" class="col-mvv">
+                    <h2>Valores</h2>
+                    <P>
+                        Nossos valores são o alicerce de tudo o que fazemos. Priorizamos a segurança e a agilidade no
+                        atendimento, respondendo de maneira rápida e eficiente às demandas de nossos clientes. A
+                        inovação está no coração de nossas operações; investimos continuamente em tecnologia avançada
+                        para otimizar processos e melhorar o desempenho de nossos serviços. Além disso, prezamos pela
+                        solidez, garantindo estabilidade e confiança nas soluções que oferecemos, sempre com um
+                        compromisso de longo prazo com nossos clientes e parceiros.
+                    </P>
+                </div>
+
+            </div>
+        </section>
+        <section id="contato" class="corpo">
+            <h1 class="titulo-corpo">Entre em contato conosco!</h1>
+            <p>Estamos aqui para ajudar você com todas as suas necessidades de administração de imóveis e condomínios.
+                Preencha o formulário abaixo e nossa equipe entrará em contato o mais breve possível.</p>
             <form id="form" action="/submit-form" method="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
@@ -84,12 +177,18 @@
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
                 <button type="submit">Enviar</button>
-        </article>
+            </form>
+            <br>
+            <h3>Ou, Faça uma simulação!</h3>
+            <br>
+            <button class="btn-simulador" id="btn-simulador-formulario">Simular Taxas de administração</button>
+        </section>
     </main>
     <footer>
         <p>Precisão © Todos os Direitos Reservados. CNPJ: 01.024.225/0001-40</p>
     </footer>
-    
+
 </body>
 <script src="/js/index.js"></script>
+
 </html>
