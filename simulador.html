@@ -4,20 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Grupo Precisão - Administração de imóveis e condomínios no Rio de Janeiro.">
-    <meta name="keywords"
-        content="Grupo Precisão, administração de imóveis, administração de condomínios, Rio de Janeiro, gestão imobiliária">
-    <meta name="author" content="Guilherme Santos">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Reset de CSS padrão entre navegodores via CDN -->
-    <link href="https://fonts.cdnfonts.com/css/co-headline" rel="stylesheet">
+    <title>Simulador de Taxas de Administração</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/simulador.css">
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/hero.css">
-    <title>Grupo Precisão</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
-    <h1>Olá, mundo!</h1>
+    <header>
+        <a href="/index.html" class="logo-link">
+            <img src="/img/logo-precisao-com-nome.svg" alt="Logo do Grupo Precisão" class="logo">
+        </a>
+        <h1>Simulador de Taxas de Administração</h1>
+    </header>
+    <main>
+        <section id="simulador">
+            <h2>Preencha os dados abaixo</h2>
+            <form id="taxa-form">
+                <label for="valor-condominio">Valor mensal do condomínio (R$):</label>
+                <input type="number" id="valor-condominio" placeholder="Ex: 50000" required>
+
+                <label for="percentual-taxa">Percentual da taxa de administração (%):</label>
+                <input type="number" id="percentual-taxa" placeholder="Ex: 8" required>
+
+                <label for="numero-meses">Número de meses:</label>
+                <input type="number" id="numero-meses" placeholder="Ex: 24" required>
+
+                <button type="submit">Calcular</button>
+                <button id="btn-home">Retornar para a home</button>
+            </form>
+        </section>
+
+        <section id="resultados" style="visibility: hidden;">
+            <h2>Resultados</h2>
+            <div id="resultados-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Percentual</th>
+                            <th>Valor mensal da taxa (R$)</th>
+                            <th>Total no período (R$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-resultados">
+                        <!-- Resultados serão inseridos aqui -->
+                    </tbody>
+                </table>
+            </div>
+            <canvas id="grafico" width="400" height="200"></canvas>
+            <button style="visibility: hidden;" id="btn-contato">Entrar em contato</button>
+        </section>
+    </main>
+    <footer>
+        <p>Precisão © Todos os Direitos Reservados. CNPJ: 01.024.225/0001-40</p>
+    </footer>
+    <!-- Modal de Contato -->
+    <div id="modal-contato" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Entre em contato conosco!</h2>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/simulador.js"></script>
+
 </body>
+
 </html>
